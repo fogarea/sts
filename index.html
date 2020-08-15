@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>sts</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="main-wrapper">
+      <nav class="main-nav">
+        <img class="main-nav__logo" src="img/logo.png" width='124' height='69' alt="Логотип">
+        <ul class="main-nav__menu navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#warranty-service">Гарантийное обслуживание</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#maintenance">Техническое обслуживание и ремонт</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#brigade">Выездные бригады</a>
+          </li>
+        </ul>
+        <div class="main-nav__address contacts">
+          <p class="contacts__address"> г.Красноярск, ул. Спандаряна 1 <br>
+            <a class="contacts__mail" href="mailto:sts.gruppagaz@yandex.ru">sts.gruppagaz@yandex.ru</a>
+          </p>
+          <p class="contacts__number"> <a href="tel:+73912296663">+7 (391) 229-66-63</a> <br> <a href="tel:+73912682016">+7 (391) 268-20-16</a></p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="slider">
+      <ul class="slider__list">
+        <li class="slider__item">
+          <img class="slider__img" src="img/ural.jpg" alt="Урал">
+        </li>
+        <li class="slider__item">
+          <img class="slider__img" src="img/yamz.jpg" alt="Ямз">
+        </li>
+        <li class="slider__item">
+          <img class="slider__img" src="img/yazda.jpg" alt="Язда">
+        </li>
+      </ul>
+      <div class="slider__dots dots">
+        <span class="dots__item" onclick="goToSlide(0)"></span>
+        <span class="dots__item" onclick="goToSlide(1)"></span>
+        <span class="dots__item" onclick="goToSlide(2)"></span>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="main-wrapper">
+        <h2 class="about__title title"> О компании</h2>
+        <div class="about__wrapper">
+          <p class="about__text">Компания ООО «СибТехно-Сервис» представлена на рынке с 2013 года и
+            является официальным сервисным центром завода АО АЗ УРАЛ.
+            Мы осуществляем ремонт, гарантийное и постгарантийное обслуживание
+            автомобилей и техники на территории Красноярского края, Республик Тыва
+            и Хакасия. В 2018 году наша компания получила лицензию Министерства Промышленности и Торговли РФ, а так же сертифицирована по стандарту
+            ГОСТ РВ 0015-002-2012 и ГОСТ Р ИСО 9001-2015
+          </p>
+          <ul class="about__list license">
+            <li class="license__item">
+              <img class="license__certificate" src="img/certificate.jpg" alt="Сертификат">
+            </li>
+            <li class="license__item">
+              <img class="license__certificate" src="img/license.png" alt="Лицензия">
+            </li>
+            <li class="license__item">
+              <img class="license__certificate" src="img/license2.png" alt="Лицензия">
+            </li>
+            <li class="license__item">
+              <img class="license__certificate" src="img/certificate_2.png" alt="Сертификат">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="warranty-service" id="warranty-service">
+      <div class="main-wrapper">
+        <div class="warranty-service__wrapper">
+          <h2 class="warranty-service__title title">Гарантийное обслуживание</h2>
+          <p class="warranty-service__text">Являясь официальным сервисными центром АО «АЗ «УРАЛ», компания ООО «СибТехно-
+            Сервис» несет гарантийные обязательства по обслуживанию техники производства АЗ УРАЛ в
+            течение гарантийного срока, включая рассмотрение и удовлетворение рекламаций. Организуется
+            выезд бригады к месту выполнения работ при удалении 30 и более километров от г. Красноярска.
+          </p>
+          <p class="warranty-service__subtitle">При обращении необходимо описать возникшую неисправность и представить <br>
+            следующие документы:
+          </p>
+          <ul class="warranty-service__list documents">
+            <li class="documents_item">
+              ПТС
+            </li>
+            <li class="documents_item">
+              Паспорт формуляр
+            </li>
+            <li class="documents_item">
+              Сервисная книжка
+            </li>
+            <li class="documents_item">
+              Указать «пробег», МЧ (мото-часы)
+            </li>
+            <li class="documents_item">
+              Указать дату, «пробег» или наработку проведения последнего ТО
+            </li>
+          </ul>
+
+          <p class="warranty-service__subtitle">Порядок осуществления гарантийного обслуживания/ремонта:</p>
+          <ul class="warranty-service__list documents">
+            <li class="documents_item">
+              Первичный осмотр автомобиля/агрегата, ознакомление с дефектом
+            </li>
+            <li class="documents_item">
+              Согласование с заводом-изготовителем
+            </li>
+            <li class="documents_item">
+              Оформление гарантийного акта
+            </li>
+            <li class="documents_item">
+              Непосредственный ремонт или замена вышедших из строя деталей
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="maintenance" id="maintenance">
+      <div class="main-wrapper">
+        <div class="maintenance__wrapper">
+          <h2 class="maintenance__title title">Техническое обслуживание и ремонт</h2>
+          <p class="maintenance__text">Полное техническое обслуживание и ремонт автомобилей УРАЛ в том числе: капитальный и
+            частичный ремонт двигателя, раздаточной коробки, КПП, редукторов, поворотных кулаков
+            ведущих мостов, ремонт и регулировка топливной аппаратуры (ТНВД), форсунок;
+            компьютерная диагностика, ремонт систем Common Rail, горячая обкатка двигателей после
+            кап.ремонта, прошивка блоков ЭБУ без наличия автомобиля.
+          </p>
+          <p class="maintenance__footnote">*Стоимость нормо-часа утверждена заводом-изготовителем</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="brigade" id="brigade">
+      <div class="main-wrapper">
+        <div class="brigade__wrapper">
+          <h2 class="brigade__title title">Выездные бригады</h2>
+          <p class="brigade__text">Компания ООО «СибТехно-Сервис» организует выезд бригады к месту ремонта (минимум 30 км
+            от г. Красноярска) в случае, когда нет возможности доставить автомобиль – для УРАЛ / двигатель,
+            КПП, силовой агрегат - для ЯМЗ к нам на базу. Зоной ответственности ООО «СибТехно-Сервис» по
+            гарантийному и постгарантийному обслуживанию являются территория Красноярского края,
+            Республик Тыва и Хакасия.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="main-wrapper">
+        <p class="feedback__title">Для уточнения деталей и стоимости оставьте заявку в форме ниже или свяжитесь с нами по телефону</p>
+        <form class="feedback__form" action="index.html" method="post">
+          <div class="feedback__row">
+            <input type="text" name="organization" placeholder="Название организации">
+            <input type="text" name="name" placeholder="Контактное лицо">
+            <input type="tel" name="tel" placeholder="Номер телефона">
+          </div>
+          <textarea name="description" rows="1" cols="80" placeholder="Опишите Ваш запрос"></textarea>
+          <div class="feedback__checkbox">
+            <input type="checkbox" name="agree" id="agree">
+            <label class="feedback__label" for="agree">Даю согласие на обработку персональных данных</label>
+          </div>
+          <button class="feedback__submit" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe class="map__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2229.431286397032!2d92.89702945159847!3d56.028520980532946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7afac5df8f23f%3A0xf72917b3c47fc14c!2z0YPQuy4g0KHQv9Cw0L3QtNCw0YDRj9C90LAsIDEsINCa0YDQsNGB0L3QvtGP0YDRgdC6LCDQmtGA0LDRgdC90L7Rj9GA0YHQutC40Lkg0LrRgNCw0LksIDY2MDAyMg!5e0!3m2!1sru!2sru!4v1597349585084!5m2!1sru!2sru"
+        width="1920" height="370" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="main-wrapper">
+      <nav class="main-nav">
+        <img class="main-nav__logo" src="img/logo.png" width='124' height='69' alt="Логотип">
+        <p class="main-nav__copyright">ООО «СибТехно-Сервис» © 2020</p>
+        <div class="main-nav__address contacts">
+          <p class="contacts__address"> <strong>г.Красноярск, ул. Спандаряна 1</strong> <br>
+            <a class="contacts__mail" href="mailto:sts.gruppagaz@yandex.ru">sts.gruppagaz@yandex.ru</a>
+          </p>
+          <p class="contacts__number"> <a href="tel:+73912296663">+7 (391) 229-66-63</a> <br> <a href="tel:+73912682016">+7 (391) 268-20-16</a></p>
+        </div>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
